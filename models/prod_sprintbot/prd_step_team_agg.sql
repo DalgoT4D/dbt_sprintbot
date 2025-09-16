@@ -4,12 +4,12 @@ WITH source as (
 
 team_agg as (
     SELECT 
-        date,
+        name,
         team,
         SUM(steps) as total_steps
     FROM source
-    GROUP BY date, team
+    GROUP BY name, team
 )
 
 SELECT * FROM team_agg
-ORDER BY date, team
+ORDER BY team

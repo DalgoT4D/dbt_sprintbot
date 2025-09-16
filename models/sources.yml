@@ -1,9 +1,15 @@
 version: 2
 
 sources:
-  - name: <source_name>
-    schema: <schema_name>
+  - name: staging_sprintbot
+    schema: staging_sprintbot
     tables:
-      - name: <table_name>
-        identifier: <table_name_in_db>
-        description: <table_description>
+      - name: flow_contexts
+        identifier: flow_contexts
+        description: "Table containing flow context data"
+      - name: contacts
+        identifier: contacts
+        description: "Table containing contact information"
+      - name: Sheet1
+        identifier: Sheet1
+        description: "Google sheet containing the steps & contact details (same as DB)"
